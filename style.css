@@ -1,0 +1,126 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 450px;
+    border: 1px solid #f00;
+    padding: 1rem;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantity-counter {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+}
+
+    .value {
+        border: 1px solid #adadad;
+        border-radius: 3px;
+        margin: 2px 0;
+        padding: 4px;
+        text-align: center;
+
+    }
+
+    .increment,.decrement {
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        border-radius: 3px;
+        background: rgba(teal, 0.7);
+        color: #fff;
+        height: 30px;
+    }
+    .card-body {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    h3 {
+        margin-top: 30px;
+        font-size: 18px;
+        color: #555;
+      }
+      
+      p { padding-left: 10px; }
+      
+      
+      /*
+       * Basic button style
+       */
+      .btn {
+        box-shadow: 1px 1px 0 rgba(255,255,255,0.5) inset;
+        border-radius: 3px;
+        border: 1px solid;
+        display: inline-block;
+        height: 18px;
+        line-height: 18px;
+        padding: 0 8px;
+        position: relative;
+      
+        font-size: 12px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+      }
+      /*
+       * Counter button style
+       */
+      .btn-counter { margin-right: 39px; }
+      .btn-counter:after,
+      .btn-counter:hover:after { text-shadow: none; }
+      .btn-counter:after {
+        border-radius: 3px;
+        border: 1px solid #d3d3d3;
+        background-color: #eee;
+        padding: 0 8px;
+        color: #777;
+        content: attr(data-count);
+        left: 100%;
+        margin-left: 8px;
+        margin-right: -13px;
+        position: absolute;
+        top: -1px;
+      }
+   
+      .sum-line{
+        position: fixed;
+        text-align: center;
+      }
+      .increment{
+         background-color: green;
+      }
+      .decrement{
+        background-color: red;
+     }
+     .fa {
+        font-size: 100px;
+        cursor: pointer;
+        user-select: none;
+      }
+      
+      .fa:hover {
+        color: darkblue;
+      }
